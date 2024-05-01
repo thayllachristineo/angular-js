@@ -4,8 +4,11 @@
   <th>Idade</th>
 
   <tr *ngFor="let pessoa of pessoas">
-    <td>{{ pessoa.nome }}</td>
-    <td>{{ pessoa.genero }}</td>
+    <td>{{ pessoa.nome | uppercase }}</td>
+    <td>{{ pessoa.genero | lowercase }}</td>
     <td>{{ pessoa.idade }}</td>
+    <td>{{ pessoa.salario | currency : "BRL" }}</td>
   </tr>
 </table>
+
+<span>{{ pessoas | json }}</span>
