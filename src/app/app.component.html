@@ -1,3 +1,5 @@
-<h1>{{ title }}</h1>
-<img [src]="imgUrl" />
-<router-outlet />
+<span [ngSwitch]="title">
+  <p *ngSwitchCase="'Olá'">Esse é um paragrafo verdadeiro</p>
+  <p *ngSwitchCase="false">Esse é um paragrafo falso</p>
+  <p *ngSwitchDefault>Esse é um paragrafo default</p>
+</span>
