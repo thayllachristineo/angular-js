@@ -1,5 +1,11 @@
-<span [ngSwitch]="title">
-  <p *ngSwitchCase="'Olá'">Esse é um paragrafo verdadeiro</p>
-  <p *ngSwitchCase="false">Esse é um paragrafo falso</p>
-  <p *ngSwitchDefault>Esse é um paragrafo default</p>
-</span>
+<table>
+  <th>Nome</th>
+  <th>Gênero</th>
+  <th>Idade</th>
+
+  <tr *ngFor="let pessoa of pessoas">
+    <td>{{ pessoa.nome }}</td>
+    <td>{{ pessoa.genero }}</td>
+    <td>{{ pessoa.idade }}</td>
+  </tr>
+</table>
