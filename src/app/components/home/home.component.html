@@ -1,0 +1,12 @@
+<table>
+  <th>Nome</th>
+  <th>Gênero</th>
+  <th>Idade</th>
+
+  <tr *ngFor="let pessoa of pessoas">
+    <td>{{ pessoa.nome | uppercase }}</td>
+    <td>{{ pessoa.genero | genero }}</td>
+    <td>{{ pessoa.idade }}</td>
+    <td>{{ pessoa.salario | currency : "BRL" }}</td>
+  </tr>
+</table>
