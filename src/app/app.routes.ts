@@ -17,4 +17,10 @@ export const routes: Routes = [
     path: 'new',
     component: NewComponent,
   },
+  {
+    path: 'produto',
+    //Lazy Loading
+    loadChildren: () =>
+      import('./features/produto/produto.module').then((m) => m.ProdutoModule),
+  },
 ];
