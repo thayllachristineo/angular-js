@@ -1,9 +1,28 @@
-<header>
+<!-- <header>
   <div class="topnav">
     <a routerLink="home" routerLinkActive="active">Home</a>
     <a routerLink="new" routerLinkActive="active">Novo</a>
     <a routerLink="produto" routerLinkActive="active">Produtos</a>
   </div>
-</header>
+</header> -->
+
+<mat-toolbar color="primary">
+  <span>{{ title }}</span>
+  <span class="example-spacer"></span>
+
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" routerLink="home" routerLinkActive="active">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="new" routerLinkActive="active">Novo</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="produto" routerLinkActive="active"
+        >Produtos</a
+      >
+    </li>
+  </ul>
+</mat-toolbar>
 
 <router-outlet />

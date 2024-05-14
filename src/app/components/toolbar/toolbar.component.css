@@ -21,3 +21,19 @@
   background-color: #4caf50;
   color: #fff;
 }
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+a {
+  color: #fff;
+  padding-right: 16px;
+  text-decoration: none;
+}
