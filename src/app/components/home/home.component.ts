@@ -19,12 +19,7 @@ export interface Pessoa {
   styleUrl: './home.component.css',
 })
 export class HomeComponent {
-  pessoas: Pessoa[] = [
-    { nome: 'Thaylla', genero: 'F', idade: 31, salario: '1000' },
-    { nome: 'Cesar', genero: 'M', idade: 26, salario: '2000' },
-    { nome: 'Giovanna', genero: 'F', idade: 29, salario: '3000' },
-    { nome: 'Marinalva', genero: 'F', idade: 68, salario: '4000' },
-  ];
+  pessoas!: Pessoa[];
 
   displayedColumns: string[] = ['Nome', 'Gênero', 'Idade', 'Salário'];
   dataSource = new MatTableDataSource(this.pessoas);
